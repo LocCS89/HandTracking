@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hand Tracking Module</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    </head>
+    <body>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+              <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+              <a href="/dashboard" class="w3-bar-item w3-button w3-padding-large">Dashboard</a>
+              <a href="/handTracking" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hand Tracking</a>
+              <a href="/game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Drawing board</a>
+            </div>
+        </div>
+
+        <div class="w3-black" id="handTracking">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+              <h2 class="w3-wide w3-center">Hand Tracking Module</h2>
+              <p class="w3-opacity w3-center"><i>The Hand Tracking module utilizes machine learning technologies to track human hand movements in real-time, creating a wide range of applications from gaming, sign language interpretation to human-computer interaction research.</i></p><br>
+
+              <h2 class="w3-wide w3-center">How to use</h2>
+              <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">Position your hand in front of the camera as shown in the video feed below. The module will automatically identify and track the hand landmarks.</li>
+                <li class="w3-padding">Ensure your hand is fully visible to the camera and is not obscured by any objects. Also, make sure the lighting conditions are adequate.</li>
+              </ul>
+              <h2 class="w3-wide w3-center">Video Feed</h2>
+              <img src="/video_feed" id="video" width="700" height="500">
+            </div>
+        </div>
+    </body>
+</html>

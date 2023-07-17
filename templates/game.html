@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtual Drawing Board</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    </head>
+    <body>
+      <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+          <a href="/dashboard" class="w3-bar-item w3-button w3-padding-large">Dashboard</a>
+          <a href="/handTracking" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hand Tracking</a>
+          <a href="/game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Drawing board</a>
+        </div>
+    </div>
+
+        <div class="w3-black" id="drawingBoard">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+              <h2 class="w3-wide w3-center">Virtual Drawing Board</h2>
+              <p class="w3-opacity w3-center"><i>The Virtual Drawing Board is an interactive application that allows you to draw on a virtual canvas using hand gestures.</i></p><br>
+
+              <h2 class="w3-wide w3-center">Instructions</h2>
+              <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">Raise your index and middle finger together to draw on the board.</li>
+                <li class="w3-padding">Raise only your index finger to change the drawing color.</li>
+                <li class="w3-padding">Raise all your fingers to clear the board and start fresh.</li>
+              </ul>
+              <h2 class="w3-wide w3-center">Video Feed</h2>
+              <img src="/game_feed" id="video" width="700" height="500">
+            </div>
+        </div>
+    </body>
+</html>

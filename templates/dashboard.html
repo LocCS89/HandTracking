@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HAND TRACKING PROJECT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    </head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+          <a href="/dashboard" class="w3-bar-item w3-button w3-padding-large">Dashboard</a>
+          <a href="/handTracking" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hand Tracking</a>
+          <a href="/game" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Drawing board</a>
+        </div>
+    </div>
+        <div class="w3-black">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+              <h2 class="w3-wide w3-center">Table of contents</h2>
+              <p class="w3-opacity w3-center"><i>The Hand Tracking Project is a computer vision-based application developed by Bui Dang Loc. It leverages machine learning technologies to track human hand movements in real time, creating interactive experiences that can be integrated into a variety of applications</i></p><br>
+        
+              <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding" ><a href="#about">About</a> </li>
+                <li class="w3-padding"><a href="#usage">Usage</a> </li>
+                <li class="w3-padding"><a href="#contributing">Contributing</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="w3-black" >
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center" id="about">About</h2>
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">The Hand Tracking Project is a unique initiative to leverage the power of computer vision and machine learning technologies to track human hand movements in real time. The primary aim of this project is to create interactive experiences by enabling machines to understand and respond to human gestures. </li>
+                <li class="w3-padding"> Developed by Bui Dang Loc, this project uses MediaPipe - a cross-platform, customizable ML solutions for live and streaming media, along with Python and its associated libraries. One of the key features of the project includes the 'Virtual Drawing Board', a fun application where the user can draw on a blank canvas using gestures. The application also allows the user to change colors and clear the canvas using different hand gestures. </li>
+                <li class="w3-padding">The project signifies a step towards more natural, intuitive interfaces that allow humans to interact with machines in a way that feels instinctive and seamless</li>
+              </ul>
+            </div>
+        </div>
+        <div class="w3-black" >
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center" id="usage">Usage</h2>
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">After installing, you can run the project with the following command:
+                <br>
+                    python main.py </li>
+                <li class="w3-padding"> Hand Tracking: This module allows the tracking of hand movements in real time. </li>
+                <li class="w3-padding">Virtual Drawing Game: This is an interactive game where users can draw on a blank canvas using their hand gestures.</li>
+              </ul>
+        </div>
+        </div>
+        <div class="w3-black" >
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center" id="contributing">Contributing</h2>
+                <p>We welcome contributions from the community. If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.</p>
+            </div>
+        </div>
+        
+</body>
+</html>
